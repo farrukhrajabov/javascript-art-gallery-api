@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" class="css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/584edc9211.js" crossorigin="anonymous"></script>
+    <title>Art Gallery</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <nav class="container">
+            <div class="social">
+                <div class="media"><a href="https://www.facebook.com/"  target="_blank" rel="noopener noreferrer" alt="Facebook"><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="media"><a href="https://www.instagram.com/"  target="_blank" rel="noopener noreferrer" alt="Instagram"><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="media"><a href="https://twitter.com/"  target="_blank" rel="noopener noreferrer" alt="Twitter"><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="media"><a href="https://www.linkedin.com/"  target="_blank" rel="noopener noreferrer" alt="Linkedin"><i class="fa-brands fa-linkedin"></i></a></div>
+            </div>
+            <div class="navbar-name">Art is too important not to share! </div>
+            <div class="navbar-list">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#gallery" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#art" class="nav-link" target="_blank">Museums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#info" class="nav-link">Info</a>
+                    </li>        
+                </ul>
+            </div>
+        </nav>
+    </nav>
+
+    <!-- Gallery -->
+    <div class="container" id="gallery">
+        <h1 class="title">Art Gallery</h1>
+
+        <!-- Image container  -->
+        <div class="img-container">
+            <div class="image" data-name="p-1">
+                <img src="images/nightlife.jpeg" alt="Nightlife" onclick="clickedEvent(117266)">
+            </div>
+            <div class="image" data-name="p-2">
+                <img src="images/FlowerClouds.jpeg" alt="Flower Clouds" onclick="clickedEvent(76395)">
+            </div>
+            <div class="image" data-name="p-3">
+                <img src="images/greyedrainbow.jpeg" alt="Greyed Rainbow" onclick="clickedEvent(83642)">
+            </div>
+            <div class="image" data-name="p-4">
+                <img src="images/TheBeachatSainte-Adresse.jpeg" alt="The Beach at Sainte-Adresse" onclick="clickedEvent(14598)">
+            </div>
+            <div class="image" data-name="p-5">
+                <img src="images/DistantViewofNiagaraFalls.jpeg" alt="Distant View of Niagara Falls" onclick="clickedEvent(90048)">
+            </div>
+            <div class="image" data-name="p-6">
+                <img src="images/AftertheHurricane.jpeg" alt="After the Hurricane" onclick="clickedEvent(16776)">
+            </div>
+        </div>
+
+        <!-- Popup images -->
+        <div class="popup-img-container">
+            <div class="popup" data-target="p-1">
+               <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+               <img src="images/nightlife.jpeg" alt="Nightlife">
+               <h3>Nightlife</h3>
+               <p>1943 <br>
+                Archibald John Motley Jr. (American, 1891-1981)</p>
+            </div>
+            <div class="popup" data-target="p-2">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+                <img src="images/FlowerClouds.jpeg" alt="Flower Clouds">
+                <h3>Flower Clouds</h3>
+                <p>1903 <br>
+                    Odilon Redon
+                    French, 1840-1916</p>
+             </div>
+             <div class="popup" data-target="p-3">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+                <img src="images/greyedrainbow.jpeg" alt="Greyed Rainbow">
+                <h3>Greyed Rainbow</h3>
+                <p>1953 <br>
+                    Jackson Pollock
+                    American, 1912-1956</p>
+             </div> 
+             <div class="popup" data-target="p-4">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+                <img src="images/TheBeachatSainte-Adresse.jpeg" alt="The Beach at Sainte-Adresse">
+                <h3>The Beach at Sainte-Adresse</h3>
+                <p>1867 <br>
+                    Claude Monet
+                    French, 1840-1926</p>
+             </div>   
+             <div class="popup" data-target="p-5">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+                <img src="images/DistantViewofNiagaraFalls.jpeg" alt="Distant View of Niagara Falls">
+                <h3>Distant View of Niagara Falls</h3>
+                <p>1830 <br>
+                    Thomas Cole
+                    American, born England, 1801-1848</p>
+             </div>   
+             <div class="popup" data-target="p-6">
+                <i class="fa-sharp fa-regular fa-circle-xmark"></i>
+                <img src="images/AftertheHurricane.jpeg" alt="After the Hurricane">
+                <h3>After the Hurricane, Bahamas</h3>
+                <p>1899 <br>
+                    Winslow Homer
+                    American, 1836-1910</p>
+             </div>           
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footport" >
+                <div class="contact" id="info">
+                    <div class="footport-head">
+                        <h4>Our Info</h4>   
+                    </div>
+                    <div class="email">
+                        <p class="port-text"><i class="far fa-envelope"></i> Email: artgallery@gmail.com</p>
+                    </div>
+                    <div class="phone">
+                        <p class="port-text"><i class="fas fa-mobile"></i> Phone:(123)-456-7891</p>
+                    </div>
+                    <div class="whatsapp">
+                        <p class="port-text"><i class="fa-brands fa-whatsapp"></i> Whatsapp:(123)-456-7891-</p>
+                    </div>
+                    <div class="viber">
+                        <p class="port-text"><i class="fa-brands fa-whatsapp"></i> (123)-456-7891</p>
+                    </div>
+                </div>
+                <div class="art-museums" id="art">
+                    <div class="footport-head">
+                        <h4>Art Museums</h4>
+                    </div>
+                    <div class="museums">
+                        <a href="https://www.metmuseum.org/" target="_blank"><p class="port-text">Metropolitan Museum of Art</p></a>
+                    </div>
+                    <div class="museums">
+                        <a href="https://www.moma.org/" target="_blank"><p class="port-text">Museum of Modern Art</p></a>
+                    </div>
+                    <div class="museums">
+                        <a href="https://www.philamuseum.org/" target="_blank"><p class="port-text">Philadelphia Museum of Art</p></a>
+                    </div>
+                    <div class="museums">
+                        <a href="https://www.lacma.org/" target="_blank"><p class="port-text">Los Angeles County Museum of Art</p></a>
+                    </div> 
+                </div>
+                <div class="helpful-websites">
+                    <div class="footport-head">
+                        <h4>Helpful Websites</h4>
+                    </div>
+                    <div class="websites">
+                        <a href="http://www.artcyclopedia.com/museums-us.html" target="_blank"><p class="port-text">Art Cyclopedia</p></a>
+                    </div> 
+                    <div class="websites">
+                        <a href="https://art-enables.org/post/3026-art-enables-is-dcs-best-of?gclid=CjwKCAjws7WkBhBFEiwAIi1685EDGUZFcM7oJw1GaJBKwzdnP_i0CoxXxkrtjU4hQDpckpfq2kCDAxoCpfIQAvD_BwE" target="_blank"><p class="port-text">Art Enables</p></a>
+                    </div> 
+                    <div class="websites">
+                        <a href="https://www.artsyshark.com/"><p class="port-text">Artsy Shark</p></a>
+                    </div>  <div class="websites">
+                        <a href="http://skinnyartist.com/"><p class="port-text">Skinny Artist</p></a>
+                    </div> 
+                </div>
+                
+            </div>
+            <div class="copyright">
+                &copy; 2023 Art Gallery
+            </div> 
+    
+        </footer>
+
+
+       
+
+
+       
+         
+            
+    </div>
+    
+</body>
+</html>
